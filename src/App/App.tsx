@@ -13,7 +13,6 @@ function App() {
     };
     getPosts();
   }, []);
-  // console.log(posts);
 
   return (
     <>

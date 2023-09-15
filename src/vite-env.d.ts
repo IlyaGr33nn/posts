@@ -1,4 +1,4 @@
-import { ToDos, User } from "./App/types"
+import { User } from "./App/types"
 
 declare module '*.module.css' {
   const classes: { [key: string]: string };
@@ -10,16 +10,10 @@ declare module '*.module.scss' {
   export default classes;
   }
   
-declare type UserState = {
-  userData: {
-    username: string,
-    id: number,
-    email: string
-  }
-}
+declare type State = {}
 
 
-declare type UserAction = {type: "SET_USER", payload: User} 
+declare type Action = {type: "", payload: User} 
 
 
 export as namespace GlobalState;
